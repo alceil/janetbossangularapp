@@ -1,0 +1,22 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>UPDATE BOOK
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+
+          <div class="container"  (ngSubmit)="updateBook()">    
+            <form >
+                Title: <input type="text" name="title" [(ngModel)]="book.title"> <br>
+                Author: <input type="text" name="author" [(ngModel)]="book.author"> <br>
+                Genre: <input type="text" name="genere"  [(ngModel)]="book.genre"> <br>
+                Image: <input type="file" name="image" (change) ="onFileSelected($event)"  > <br>
+                <button routerLink="/books" type ="submit" (click) ="updateBook()">Add</button> <br>
+            </form>
+           </div>
+  

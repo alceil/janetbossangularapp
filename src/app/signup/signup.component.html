@@ -1,0 +1,76 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>SIGNUP
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12"> 
+                     <div class="panel">
+                         <div class="panel-body">
+                          <!-- login form starts-->
+                            <!-- <div class="myMargin inputForm bg-input"> -->
+                             <div class= "col-md-4 col-lg-offset-4 ">  
+
+                              <form class="form col-md-6" #userlogin="ngForm" (ngSubmit)="signUpUser()">
+                                
+                                
+                                <div class="form-group">
+                                  <label for="email"> Username </label>
+                                  <input type="email" class="form-control" name="username" [(ngModel)]="user.username" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                              </div>
+                                
+                                
+                                <div class="form-group">
+                                    <label for="email"> Email </label>
+                                    <input type="email" class="form-control" name="email" [(ngModel)]="user.email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="password"> Password </label>
+                                    <input type="password" class="form-control" name="password" [(ngModel)]="user.password" minlength="6" required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                  <label for="email"> Phone no </label>
+                                  <input type="email" class="form-control" name="phoneno" [(ngModel)]="user.phoneno" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                              </div>  
+                                <button class="btn btn-primary"  >Confirm</button>
+                            </form>
+
+                                <!-- <form>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input type="text" name="name" [(ngModel)]="user.username" required class="form-control"  id="email" aria-describedby="emailHelp">
+                                </div>
+                                    <div class="form-group">
+                                         <label for="exampleInputEmail1">Email address</label>
+                                         <input type="text" name="email" [(ngModel)]="user.email" required class="form-control"  id="email" aria-describedby="emailHelp">
+                                     </div>
+                                    <div class="form-group">
+                                         <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" name="password" [(ngModel)]="user.password" required class="form-control"  id="pwd">
+                                     </div>
+                                     <div class="form-group">
+                                      <label for="exampleInputPassword1">Confirm Password</label>
+                                     <input type="password" name="password" required class="form-control"  id="pwd">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone number</label>
+                                   <input type="text" name="phoneno" [(ngModel)]="user.phoneno" required class="form-control"  id="pwd">
+                                </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                         <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                     <button type="submit" class="btn btn-primary" id="submit" (ngSubmit)="loginUser()">Login</button>
+                                 </form> -->
+                            </div>
+  

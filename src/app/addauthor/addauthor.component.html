@@ -1,0 +1,21 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>ADDAUTHOR
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+          <div class="container">  
+             <form >
+                Author: <input type="text" name="author" [(ngModel)]="author.author"> <br>
+                Image: <input type="file"   name="image" (change) ="onFileSelected($event)"> <br>
+                Details: <input type="text" name="details" [(ngModel)]="author.details"> <br>
+                <button type="submit" (click) ="addAuthor()">Add</button> <br>
+
+            </form>
+          </div>
+  

@@ -1,0 +1,32 @@
+<div id="masthead">  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h1>BOOKS 
+            <p class="lead"></p>
+          </h1>
+        </div>          
+              </div>
+            </div>
+          </div>
+             <div class="row" *ngFor="let company of apidata">    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src = {{company.image}} width="193" height="190" ></a>
+            </div>
+            <div class="col-md-10 col-sm-9" >
+              <h3>{{company.title}}</h3>
+              <h3>{{company.genre}}</h3>
+              <h3>{{company.author}}</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default"></span>{{apidata[0].author}}</h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">fictiom 
+                  <a [routerLink] = "[company._id]" class="text-muted">Read More</a></small>
+                  </h4></div>
+                <div class="col-xs-3"></div>
+              </div>
+              <br><br>
+            </div>
+          </div>
+  
